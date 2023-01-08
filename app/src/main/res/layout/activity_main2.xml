@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:scrollbars="horizontal"
+    tools:context=".MainActivity2">
+
+    <TextView
+        android:id="@+id/title1"
+        style="@android:style/Widget.Material.EditText"
+        android:layout_width="77dp"
+        android:layout_height="39dp"
+        android:layout_marginEnd="304dp"
+        android:background="@null"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:singleLine="true"
+        android:text="    全部"
+        android:textAppearance="@style/TextAppearance.AppCompat.Small"
+        android:textColor="#2A74F6"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.8"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.21" />
+
+
+    <ImageView
+        android:id="@+id/icon"
+        android:layout_width="142dp"
+        android:layout_height="34dp"
+
+        android:layout_marginStart="132dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.077"
+        app:srcCompat="@drawable/googlelogo" />
+
+    <EditText
+        android:id="@+id/search"
+        android:layout_width="381dp"
+        android:layout_height="37dp"
+        android:layout_marginBottom="628dp"
+
+        android:inputType="text"
+        android:imeOptions="actionDone"
+        android:background="@drawable/textview_border"
+        android:drawableStart="@drawable/ic_baseline_search_24"
+
+        android:importantForAutofill="no"
+        android:shadowColor="#A19F9F"
+        android:shadowDx="2"
+        android:shadowDy="2"
+        android:shadowRadius="2"
+        android:textColor="#000000"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.466"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageView
+        android:id="@+id/user"
+        android:layout_width="34dp"
+        android:layout_height="34dp"
+
+        android:layout_marginEnd="28dp"
+        android:background="@drawable/account_back"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.044"
+        app:srcCompat="@drawable/ic_baseline_person_24" />
+
+    <!--        <Button-->
+    <!--            android:layout_height="10dp"-->
+    <!--            android:layout_width="wrap_content"-->
+    <!--            android:layout_weight="1"-->
+    <!--            android:onClick="test1"-->
+    <!--            android:text = "test1"-->
+    <!--            />-->
+
+    <!--        <Button-->
+    <!--            android:layout_height="10dp"-->
+    <!--            android:layout_width="wrap_content"-->
+    <!--            android:layout_weight="1"-->
+    <!--            android:onClick="test2"-->
+    <!--            android:text = "test2"-->
+    <!--            />-->
+
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="365dp"
+        android:layout_height="404dp"
+        android:orientation="vertical"
+        android:textColor="#99999C"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.498">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerview"
+            android:layout_width="350dp"
+            android:layout_height="482dp"
+            android:layout_marginTop="10dp"
+            android:lineSpacingMultiplier="2" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/keywordsLayout"
+        android:layout_width="365dp"
+        android:layout_height="100dp"
+        android:orientation="vertical"
+        android:textColor="#99999C"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.917">
+
+        <ListView
+            android:id="@+id/keywordsview"
+            android:layout_width="350dp"
+            android:layout_height="100dp"
+            android:layout_marginTop="10dp"
+            android:lineSpacingMultiplier="2" />
+
+
+
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/editTextTextMultiLine2"
+        android:layout_width="381dp"
+        android:layout_height="39dp"
+        android:ems="10"
+        android:gravity="start|top"
+        android:inputType="textMultiLine"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.22" />
+
+    <TextView
+        android:id="@+id/title2"
+        style="@android:style/Widget.Material.EditText"
+        android:layout_width="317dp"
+        android:layout_height="39dp"
+        android:background="@null"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:singleLine="true"
+        android:text="圖片       新聞       影片      地圖      其他"
+        android:textAppearance="@style/TextAppearance.AppCompat.Small"
+        android:textColor="#99999C"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.21" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
